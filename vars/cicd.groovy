@@ -8,7 +8,7 @@ def mavenbuild()
 }
 def tomcatDeploy(jobname,ip,contextpath)
 {
-  sh "scp /var/libs/jenkins/workspace/${jobname} ${ip}/webapss/${contextpath}.war"
+  sh "scp /var/libs/jenkins/workspace/${jobname} ${ip}/webapps/${contextpath}.war"
 }
 def runSelenium(jobname)
 {
